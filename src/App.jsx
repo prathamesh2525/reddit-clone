@@ -1,12 +1,18 @@
+import { createContext, useState } from "react"
 import "./App.css"
 import Feed from "./components/Feed"
 import Navbar from "./components/Navbar"
 
+export const myContext = createContext("")
+
 function App() {
+  const [popup, setPopup] = useState(false)
   return (
     <div className="h-screen bg-black text-white">
-      <Navbar />
-      <Feed />
+      <myContext.Provider value={{ popup, setPopup }}>
+        <Navbar />
+        <Feed />
+      </myContext.Provider>
     </div>
   )
 }

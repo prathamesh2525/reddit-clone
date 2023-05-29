@@ -9,11 +9,13 @@ import { BiChevronDown, BiHelpCircle } from "react-icons/bi"
 import { CgMoreVerticalO } from "react-icons/cg"
 import { RiTodoLine, RiLoginBoxLine } from "react-icons/ri"
 import { TbSpeakerphone } from "react-icons/tb"
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { myContext } from "../App"
 
 const Navbar = () => {
   const [profileInfo, setProfileInfo] = useState(false)
-  const [popup, setPopup] = useState(false)
+  const { setPopup } = useContext(myContext)
+
   return (
     <div className="w-full">
       <div className="flex items-center justify-between space-x-5 bg-zinc-900 px-4 py-1 h-14 border-b border-zinc-700">
