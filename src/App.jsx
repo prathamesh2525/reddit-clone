@@ -7,6 +7,7 @@ export const myContext = createContext("")
 
 function App() {
   const [popup, setPopup] = useState(false)
+  const [feedSearch, setFeedSearch] = useState(false)
   return (
     <div className="h-screen bg-black text-white">
       <myContext.Provider value={{ popup, setPopup }}>

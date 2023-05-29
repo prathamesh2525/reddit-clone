@@ -78,7 +78,7 @@ const Feed = () => {
 
         {/* Pop up */}
         {popup && (
-          <div className="absolute top-40 h-auto w-72 lg:h-[600px] lg:w-96 bg-white mx-auto z-10 text-black rounded-xl">
+          <div className="absolute top-40 h-auto w-80 lg:h-[600px] lg:w-96 bg-white mx-auto z-10 text-black rounded-xl">
             <div className="relative flex flex-col p-12">
               <div className="mb-4">
                 <h1 className="font-bold mb-2">Log In</h1>
